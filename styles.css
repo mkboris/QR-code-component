@@ -74,7 +74,7 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  /* display: block; */
+  display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -103,6 +103,7 @@ body {
   justify-content: center;
   padding: 0 1rem;
 }
+
 .qr-code {
   background-color: hsl(0, 0%, 100%);
   text-align: center;
@@ -111,17 +112,17 @@ body {
   box-shadow: 0 1.5625rem 1.5625rem rgba(0, 0, 0, 0.0476518);
   border-radius: 1.25rem;
 }
-.qr-img {
+
+.qr-code img {
   border-radius: 0.625rem;
   transition: transform 0.1s;
 }
-.qr-img:hover {
+
+img:hover {
   transform: scale(1.05);
 }
-.hidden {
-  display: none;
-}
-.heading {
+
+h1 {
   color: hsl(218, 44%, 22%);
   font-weight: 700;
   font-size: 1.375rem;
@@ -129,7 +130,8 @@ body {
   margin-top: 1.25rem;
   margin-bottom: 1rem;
 }
-.paragraph {
+
+p {
   color: hsl(220, 15%, 55%);
   font-weight: 400;
   font-size: 0.9375rem;
